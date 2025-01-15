@@ -25,8 +25,8 @@ main {
 }
 
 nav {
-    display: flex;
-    background: #4e54c8;
+    /*display: flex;*/
+    background: #ffffff;
     border-radius: 10px; /* Membuat sudut sedikit melengkung */
     overflow: hidden;
     padding: 5px;
@@ -35,7 +35,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #ffffff; /* Warna teks */
-    padding: 10px 20px;
+    /*padding: 10px 20px;*
     transition: all 0.3s ease; /* Animasi transisi */
     font-size: 16px;
     font-weight: bold;
@@ -64,7 +64,7 @@ nav>a {
     padding: 8px;
     color: black;
     text-decoration: none;
-    background-color:rgb(214, 122, 79);
+    background-color:#134B70;
 }
 
 .slider {
