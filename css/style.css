@@ -1,0 +1,254 @@
+/* ini css */
+
+body {
+    font-family: quicksand, sans-serif;
+}
+
+.main-header {
+    margin: 8px 10% 8px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin: 8px 10% 8px 10%;
+    padding: 0;
+}
+
+.logo-icon {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-image: url(https://st3.depositphotos.com/16030310/18317/v/450/depositphotos_183176434-stock-illustration-letters-logo-initial-logo-identity.jpg);
+    background-size: contain;
+}
+
+nav {
+    display: flex;
+    background: #4e54c8;
+    border-radius: 10px; /* Membuat sudut sedikit melengkung */
+    overflow: hidden;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Warna teks */
+    padding: 10px 20px;
+    transition: all 0.3s ease; /* Animasi transisi */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Warna latar hover */
+    color: #ffffff; /* Warna teks saat hover */
+    transform: scale(1.1); /* Sedikit perbesar saat hover */
+    border-radius: 5px;
+}
+
+.left-rounded {
+    border-radius: 10px 0 0 10px; /* Sudut kiri membulat */
+}
+
+.right-rounded {
+    border-radius: 0 10px 10px 0; /* Sudut kanan membulat */
+}
+
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    background-color:rgb(214, 122, 79);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modifikasi untuk responsif slider */
+@media (max-width: 768px) {
+    .slider {
+        height: 250px; /* Mengurangi tinggi slider pada layar kecil */
+    }
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 500%;
+}
+
+.slide {
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi ruang tanpa distorsi */
+}
+
+.first-content {
+    height: 50px;
+}
+
+.content {
+    height: 100px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+/* Modifikasi untuk responsif lokasi */
+@media (max-width: 768px) {
+    .locations {
+        flex-direction: column; /* Menata elemen secara vertikal */
+        gap: 20px; /* Mengurangi jarak antar elemen */
+    }
+}
+
+.location {
+    text-align: center;
+}
+
+.location img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+form, .output {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #134B70;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #134B70;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.radio-group label {
+    margin: 0;
+}
+
+/* responsifitas mobile  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #134B70;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #134B70;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #134B70;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 100;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #134B70;
+    text-align: center;
+  font-weight: bold;
+  }
